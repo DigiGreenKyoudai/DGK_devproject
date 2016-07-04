@@ -1,0 +1,250 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SPORTCAMBODIA WEBSITE IMPLEMENTATION
+REQUIREMENTS ANALYSIS V1.0
+
+
+
+
+
+
+
+Author	DIGIGREEN KYODAI Team	Date	14/06/2016 - 
+Company	KIT	Version	1.0
+Issued to	A2A Town Cambodia Ltd.	Reviewer	Leo
+
+
+
+
+
+
+
+
+
+
+
+Table of Contents
+
+1.	INTRODUCTION	2
+2.	PURPOSE	2
+3.	INTENDED AUDIENCE	2
+4.	BUSINESS GOALS/OBJECTIVES	2
+5.	SYSTEM USERS	3
+6.	DEPENDENCIES ON EXISTING SYSTEM	3
+7.	ANALYSIS OF EXISTING SYSTEM	3
+8.	REQUIREMENTS SCOPE	3
+9.	FUNCTIONAL REQUIREMENTS	5
+10.	NON-FUNCTIONAL REQUIREMENTS	7
+11.	REVISION LOG	7
+12.	APPENDICES	7
+13.	APPROVAL	8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+1.	Introduction
+
+As a part of Sport Management System (SportCambodia Website) implementation project, this document outlines the requirements analysis for SportCambodia Website.
+
+The main objectives of this document is to:
+•	It is to create a website to list and manage the playgrounds and training clubs 
+•	List and manage sport events that are conducted on these playgrounds.
+
+The requirements analysis sets out in more detail the scope of the Sport Management System to be implemented, and the functional and non-functional requirements to be met, and the corresponding scope of data to be handled. 
+
+Functional requirements concern with SportCambodia Website included in scope and the way they are designed to operate. Non-functional requirements cover aspects of service delivery such as backup and system accessibility. 
+
+With phased implementation, this document lays out the sequence of implementation, and changes made in each phase. 
+
+This document is made to meet the contractual terms, and once the basic requirements (v1.0) are agreed, any change is subject to a change control process.
+
+This document can be used as a checklist to ensure all user's requirements are met.
+2.	Purpose
+
+This document summarizes the business process of current system (automated and non-automated) being used by A2A Town Cambodia ltd. for handling Sales, as well as ODOO Sales Management implementation requirements. Business processes and requirements are analyzed for:
+-	Sales Lead management
+-	Sales Opportunity management
+-	Sales Quotation management
+-	Sales Sales-Order management 
+
+3.	Intended Audience
+
+-	Stakeholders.
+-	Sales managers.
+-	Sales staff who work with sales lead, opportunity, quotation and sales order.
+-	Sport Management System developers, testers, and consultants.
+-	Sport Management System users who take part in Sport Management System and evaluation.
+
+4.	Business Goals/Objectives
+
+Sport Management System requirements analysis can allow for:
+-	Facilitating the management of sport event data and having a better control of the functions achieved. This is done by migrating to Sport Management System.
+-	Playground and event data quality (i.e. data consistency and avoiding redundancy within the SportCambodia Website). 
+-	Improving Sport Management data security (storage and accessibility).
+-	Faster and easier way for Sport Management reporting.
+5.	System Users
+Name	Position	Role	Contact Information
+Mr. Chris	Sales & Marketing Manager	•	Responsible for vKririrom Property
+•	In charged for Sale and Marketing	chris@asiato.asia
+Ms. Chihiro	Office
+Manager	•	Responsible for managing the Odoo project	chihiro@asiato.asia
+Mr. Samphea	Sales & Marketing Manager for Resort	•	Responsible for vKirirom resort product	asstrm@vkririom.asia
+Mr. Sothea	Front Office Manager	•	In charged for reception, update the daily report.	info@vkirirom.asia
+
+6.	Dependencies on Existing System
+
+ODOO Sales Management successful implementation depends on the existing system (automated and non-automated) in many way:
+1.	Sales management process (leads, opportunities, quotations and sales orders), and organizational charts.
+2.	All forms and reports produced by the current systems whether in a paper form or computer files (e.g. spreadsheets, databases, etc.) related to the Sales management four sub-modules. These files serve as inputs to ODOO system.
+3.	Any relevant HR organizational regulations.
+
+7.	Analysis of Existing System\
+
+•	Using Excel sheet to manage the the sales. 
+•	To make report, A2A is using excel sheet also to create report.
+•	For resort product management, vKirirom use KIOSK third party application to manage. Worksheet for checking attendance of workers.
+•	Difficult to track the previous records.
+•	The KIOSK application produce wrong data and not accurate in daily report, so they decide to make their own daily record based on Excel sheet and print it out.
+•	Not satisfy with the current system.
+
+
+
+
+
+
+
+
+
+
+
+8.	Requirements Scope
+(ODOO functionality)
+
+Sub-Module	In Scope	Out of Scope
+Product data	•	We can create product by giving basic information, manage and display quantity, variant price of a product, set the income and outcome accounting, add photo to the product.
+•	We can produce the same requirement information for both property products and resort products.
+•	Creating sub-product or accessory for the product	•	Specific addition field for the product. (Properties field : Land Area.)   
+•	Warehouse is actually another module different from sales. However, it is related to the product in stock which required us to validate during Sales order. So we work only regarding Product in Warehouse module, other else are not included.
+•	Unable to create customized field for the product
+
+ 
+
+
+9.	Functional Requirements
+Functions the client required whether directly (interviews, emails, messages, etc.) or indirectly (extracted from the clients data provided (forms, reports, databases, etc.) (Regardless ODOO functionality)
+
+Sub-Module	Functions
+Product data	•	We can create product by giving basic information, manage and display quantity, variant price of a product, set the income and outcome accounting, add photo to the product.
+•	We can produce the same requirement information for both property products and resort products.
+•	Specific addition field for the product. (Properties field : Land Area.)   
+•	Warehouse is actually another module different from sales. However, it is related to the product in stock which required us to validate during Sales order. So we work only regarding Product in Warehouse module, other else are not included.
+•	Creating sub-product and accessory for the product
+Customer data	•	We can create customers with necessary contact information, also how many times customer had made contact with us. 
+•	Giving the access right to the User
+Please refer to Appendix A for requirements gathering methods 
+
+ 
+
+10.	Non-functional Requirements
+Necessary for the system implementation
+
+Requirement	Description
+User's Accessibility	Access rights allocated to individual user or groups of users
+Getting a licenced ODOO software	This is assumed to be already done by the client
+Installing ODOO system
+	
+Hosting the ODOO to cloud server
+	
+Availability	The sale staffs can access to Odoo System at 
+anywhere, anytime with Internet Connection.
+Security	All data Odoo must be more secure and manually backup.
+Communication	Sale stuffs should communicate well with each other.
+For the full access rights list, please refer to Appendix B
+
+
+11.	Revision Log
+Date	Version	Change Reference	Reviewed by
+							
+	15/01/2016		1.1	•	Creating sub-product and accessory for the product
+•	Giving the access right to the User
+•	Adding new field to the opportunities like ‘Deposit Amount’ and ‘Deposit Date’
+•	Adding term and condition to the form and report
+•	Adding new field inside the template
+•	Customized header and footer
+•	Adding existing Field into the Report		Mr. Osama
+							
+							
+
+12.	Appendices 
+
+•	Skype meeting
+o	Mr. Senthill Kumar on 14/06/2016 3:30pm – 6:30pm at KIT
+	Introduction to the Sport Management System
+	Step by step guide on deployment and installation of the system
+	General purpose of the system
+	Basic data and technical requirements
+o	Mr. Senthill Kumar on 20/06/2016 5:00pm – 7:30pm at KIT
+	Instruction on the installation of the system
+	Discussing and solving issues in installation
+o	Mr. Senthill Kumar on 04/07/2016 2:31pm –3:00pm at KIT
+	SportCambodia involved document.
+
+
+
+13.	Approval 
+This document has been approved as the official Business Requirements Document for the project.
+ODOO HR Implementation. Changes will be governed by the project’s change management process.
+
+Prepared by	Signature	Date
+	
+		
+	
+Approved by	Signature	Date
+	
+		
+	
+
+
